@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/adapters.dart';
-import 'package:jan_roman/tipos_armas.dart';
+import 'package:jan_roman/Paginas/PrimeraPagina.dart';
 
 
 void main() async {
