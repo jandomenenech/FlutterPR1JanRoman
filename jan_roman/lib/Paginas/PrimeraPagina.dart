@@ -10,10 +10,10 @@ class TipoArmas extends StatelessWidget{
   Widget build(BuildContext context){
     return Column(
       children: [
-        Clases_armas(valorText:"ASSAULT RIFLES", tipo_arma: "Rifle de Asalto",),
-        Clases_armas(valorText:"SUBMACHINE RIFLES", tipo_arma: "Subfusil",),
-        Clases_armas(valorText:"SNIPER RIFLES", tipo_arma: "Francotirador",),
-        Clases_armas(valorText:"HANDGUNS", tipo_arma: "Pistola",),
+        Clases_armas(valorText:"ASSAULT RIFLES", tipo_arma: "Assault Rifle",),
+        Clases_armas(valorText:"SUBMACHINE RIFLES", tipo_arma: "Submachinegun",),
+        Clases_armas(valorText:"SNIPER RIFLES", tipo_arma: "Sniper Rifle",),
+        Clases_armas(valorText:"HANDGUNS", tipo_arma: "Handgun",),
         //Clases_armas(valorText: "LIGHT MACHINE GUN"),
         //Clases_armas(valorText: "HEAVY WEAPONS"),
       ],

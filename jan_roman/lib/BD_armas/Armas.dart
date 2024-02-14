@@ -1,40 +1,37 @@
 import 'package:hive/hive.dart';
+import 'package:hive_flutter/adapters.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 class Armas {
   List listaArmas = [];
   List listaTipo = [];
 
-  final _boxTasques = Hive.box("box_armas");
+  final _boxArmas = Hive.box("box_armas");
 
-  List carregarDades(String tipo) {
-    listaArmas = _boxTasques.get("box_armas");
-    for (int index = 0; index < listaArmas.length; index++) {
-      if (listaArmas[index][0] == tipo) {
-        listaTipo.add(listaArmas[index]);
-      } else {}
+  void carregarDades() {
+    listaArmas = _boxArmas.get("box_armas");
     }
+  
 
-    return listaTipo;
-  }
 
   void guardarDades() {
-    _boxTasques.put("box_armas", listaArmas);
+    _boxArmas.put("box_armas", listaArmas);
   }
 
   void crearDadesInicials() {
     listaArmas = [
-      ["Rifle de Asalto", "M4A14"],
-      ["Subfusil", "F2000"],
-      ["Pistola", "Glock 19"],
-      ["Pistola", "Dessert Eagle"],
-      ["Subfusil", "FAL"],
-      ["Francotirador", "Barret M82"],
-      ["Francotirador", "Mk13"],
-      ["Rifle de asalto", "IA2"],
-      ["Rifle de asalto", "Galil"],
-      ["Pistola", "Kolibri 2mm"],
-      ["Subfusil", "FNAB-43"],
-      ["Francotirador", "M24"]
+      ["Assault Rifle", "M4A14"],
+      ["Submachinegun", "F2000"],
+      ["Handgun", "Glock 19"],
+      ["Handgun", "Dessert Eagle"],
+      ["Submachinegun", "FAL"],
+      ["Sniper Rifle", "Barret M82"],
+      ["Sniper Rifle", "Mk13"],
+      ["Assault Rifle", "IA2"],
+      ["Assault Rifle", "Galil"],
+      ["Handgun", "Kolibri 2mm"],
+      ["Submachinegun", "FNAB-43"],
+      ["Sniper Rifle", "M24"]
     ];
   }
 }
