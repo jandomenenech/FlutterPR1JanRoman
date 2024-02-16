@@ -11,7 +11,7 @@ class Armas {
   void carregarDades() {
     listaArmas = _boxArmas.get("box_armas");
     }
-  
+
 
 
   void guardarDades() {

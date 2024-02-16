@@ -23,10 +23,8 @@ class Clases_armas extends StatelessWidget {
       padding: const EdgeInsets.all(20.10),
       child: Container(
         decoration: BoxDecoration(
-          image: DecorationImage(
-          image: AssetImage("jan_roman/lib/camouflage-seamless-pattern-trendy-style-600nw-1456834667.png"),
-          fit: BoxFit.cover,
-         )
+          color: Color.fromRGBO(83, 94, 53, 1).withOpacity(.9),
+          borderRadius: BorderRadius.circular(20),
         ),
         padding: const EdgeInsets.all(15),
         child: Padding(
